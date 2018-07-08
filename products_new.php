@@ -1,5 +1,7 @@
 <?php
 $flag = 1;
+$pro_id=$_GET['id'];
+echo $pro_id;
 ?>
 
 <!DOCTYPE html>
@@ -50,14 +52,14 @@ width:22%;
 </head>
 
 
-<?php include"includes/header.php"; ?>
+<?php include"functions/functions.php"; ?>
 <div class="container-fluid content-wrapper" style="margin-top:5em;">
     <div class="row">
         <div class="col-sm-2 noLeftPadding">
             <div class="sidebar">
                 <h2>Categories</h2>
                 <div class="btn-group" role="group">
-                   <a data-toggle="tab" href="#women"> <button class="women" id="wom_btn" type="button" class="btn btn-default categories active"> 
+                   <a class="women" data-toggle="tab" href="#women"> <button id="wom_btn" type="button" class="btn btn-default categories active"> 
                         Women
                     </button> </a>
                    <a class="kids" data-toggle="tab" href="#kids"> <button type="button" id="kid_btn" class="btn btn-default">
@@ -195,15 +197,15 @@ $('#wom_btn').click(function(){
 		}
 	});
 });
-/*
-$('.women').each(function(){
-	$('.women').on('click',function() {
+
+$('.kids').each(function(){
+	$(this).on('click',function() {
         var sub = $('.title-category').attr('mainCat');
         console.log(sub);
         if(sub==24){
         console.log("hi");
-$('.title-')
-
+var sub_sub =  $('.title-category').attr('subCat:last');
+console.log(sub_sub);
          $('.title-category').find('subCat').removeClass('show'); 
         }
         else{
@@ -212,16 +214,5 @@ $('.title-')
     });
 });
 
-*/
-
-	$('.women').on('click',function() {
-           $('.main-category').each(function(i,obj){
-        if(obj.class == 'title-category' && obj.mainCat == 24){
-var ob = $('.title-category').attr('mainCat');
-} 
-        console.log(ob);
-});
-
-});
 
 </script>
