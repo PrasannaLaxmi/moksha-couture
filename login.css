@@ -1,0 +1,35 @@
+.modal .login {
+    margin-top:27px;
+}
+
+#loginModal .modal-body {
+    padding: 0 !important;
+}
+
+.modal .logo {
+    margin-top:27px;
+    margin-bottom:54px;
+}
+
+.modal .last-row {
+    margin-bottom:0px;
+}
+
+.modal .checklabel {
+    font-weight:100;
+}
+
+/*.modal .logo img {
+    width: 10%;
+    height: auto;
+}*/
+
+.logo .logo{
+    width: 11%;
+    height: auto;
+}
+
+.logo .logo-name{
+    width: 20em;
+    margin-top: -5em;
+}

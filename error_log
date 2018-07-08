@@ -1,0 +1,1 @@
+[11-Dec-2017 06:27:16 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/embus/public_html/mokshacouture.com/admin_area/loginform.php on line 67
